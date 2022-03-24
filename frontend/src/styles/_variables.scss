@@ -1,0 +1,110 @@
+// all style-variables that we use in more components
+// ex:
+
+$color1: #217099;
+$color2: #288fc5;
+// $color3: #46a7da;
+$color4: #aaaaaa;
+$color5: #c3c3c3;
+$color6: #741e1e;
+
+$bor-col: #4e6096;
+
+//alternative color
+$color3: #fbfbfb;
+
+$background: #cedae7;
+$border: #864000;
+$font: #0f0f0f;
+$container: #0770e3;
+// $title: #864000;
+// $focus: #0770e3;
+
+@mixin initialStyle {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin fieldsetStyle {
+  border: 4px solid #e0d8d8;
+  border-radius: 0.9rem;
+}
+
+@mixin legendStyle {
+  color: #e0d8d8;
+  font-size: clamp(2em, 1vw, 9em);
+  font-weight: bold;
+}
+
+@mixin inputStyle {
+  width: 100%;
+  padding: 2px;
+  font-size: 1rem;
+  height: 2.5rem;
+  font-weight: bold;
+  // border: 2px solid $bor-col;
+  background-color: #fff4eb;
+  color: #000;
+  border-radius: 0.5rem;
+  // box-shadow: 0px 0px 2px rgba(40, 57, 102, 0.99);
+  // text-shadow: 0px 0px 0px rgba(40, 57, 102, 0);
+  text-align: center;
+  outline: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin buttonStyle {
+  // box-shadow: 0px 0px 0px 2px #9fb4f2;
+  background-color: $color2;
+  border-radius: 0.5rem;
+  // border: 0.2rem solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-decoration: none;
+  // text-shadow: 0px 0px 0px #283966;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background-color: #5c83b3;
+    // background-color: $color2;
+  }
+
+  &:active {
+    position: relative;
+    top: 2px;
+  }
+}
+
+$datepicker__background-color: #f0f0f0 !default;
+$datepicker__border-color: #aeaeae !default;
+$datepicker__highlighted-color: #3dcc4a !default;
+$datepicker__muted-color: #ccc !default;
+$datepicker__selected-color: #216ba5 !default;
+$datepicker__text-color: #000 !default;
+$datepicker__header-color: #000 !default;
+$datepicker__navigation-disabled-color: lighten(
+  $datepicker__muted-color,
+  10%
+) !default;
+
+$datepicker__border-radius: 0.3rem !default;
+$datepicker__day-margin: 0.166rem !default;
+$datepicker__font-size: 0.8rem !default;
+$datepicker__font-family: "Helvetica Neue", helvetica, arial, sans-serif !default;
+$datepicker__item-size: 1.7rem !default;
+$datepicker__margin: 0.4rem !default;
+$datepicker__navigation-button-size: 32px !default;
+$datepicker__triangle-size: 8px !default;

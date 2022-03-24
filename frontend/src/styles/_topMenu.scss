@@ -1,0 +1,65 @@
+.topMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0.7vh 0;
+  color: #145375;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: clamp(1.2em, 2vw, 2em);
+    // color: #145375;
+    font-weight: bolder;
+    margin: 0 0 0 3vmax;
+    -webkit-animation: rotate-center 20s linear infinite reverse both;
+    animation: rotate-center 20s linear infinite reverse both;
+
+    @-webkit-keyframes rotate-center {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes rotate-center {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .homeIcon {
+    margin: auto auto auto 0.5rem;
+    font-size: clamp(1.2em, 2vw, 2em);
+    .color {
+      color: #145375;
+    }
+  }
+
+  h1 {
+    font-size: clamp(1.2em, 2vw, 2em);
+    color: #145375;
+    margin: auto auto auto 1rem;
+
+  }
+
+  .topNavbar {
+    display: flex;
+    align-items: center;
+
+    .reactIcons {
+      font-size: clamp(1.5em, 2vw, 2em);
+      margin-right: 1rem;
+    }
+  }
+}

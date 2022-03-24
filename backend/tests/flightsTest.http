@@ -1,0 +1,68 @@
+@url= http://localhost:7033/flights
+
+### READ ALL FLIGHTS
+GET {{url}}
+content-type: application/json
+
+#############################
+### ALL SORTED FLIGHTS BY ###
+#############################
+### AIRPORT FROM
+GET {{url}}/airport-from
+content-type: application/json
+
+### AIRPORT TO
+GET {{url}}/airport-to
+content-type: application/json
+
+### COUNTRY FROM
+GET {{url}}/country-from
+content-type: application/json
+
+### COUNTRY TO
+GET {{url}}/country-to
+content-type: application/json
+
+### DEPARTURE
+GET {{url}}/departure
+content-type: application/json
+
+### ARRIVAL
+GET {{url}}/arrival
+content-type: application/json
+
+### ASCENDING DISTANCE
+GET {{url}}/distance-ascending
+content-type: application/json
+
+### DESCENDING DISTANCE
+GET {{url}}/distance-descending
+content-type: application/json
+
+### ASCENDING DURATION
+GET {{url}}/duration-ascending
+content-type: application/json
+
+### DESCENDING DURATION
+GET {{url}}/duration-descending
+content-type: application/json
+
+### ASCENDING DATE
+GET {{url}}/date-ascending
+content-type: application/json
+
+### DESCENDING DATE
+GET {{url}}/date-descending
+content-type: application/json
+
+### ASCENDING PRICE
+GET {{url}}/price-ascending
+content-type: application/json
+
+### DESCENDING PRICE
+GET {{url}}/price-descending
+content-type: application/json
+
+### FILTERED BY AIRPORT FROM
+GET {{url}}/Stuttgart
+content-type: application/json

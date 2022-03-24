@@ -1,0 +1,61 @@
+-30 days Flights 
+-10 airports => -BIG aiports fly to 5 - 9 aiports
+-10 airports => -small aiports fly to 1 - 4 aiports
+
+Exemple:
+
+-Paris,Frankfurt fly to all airports (9 destinations per aiport)
+-Amsterdam,Berlin,Rome fly to 7 aiports
+-Madrid,Hamburg,Athens fly to 5 airports
+-Milan, Barcelona fly to 3 aiports
+
+  const arrAirports = [                         // Passengers in million
+    'London Airport, UK',                    // 80
+    'Paris Airport, France',                 // 76
+    'Amsterdam Airport, Netherlands',        // 71
+    'Frankfurt Airport, Germany',            // 70
+    'Madrid Airport, Spain',                 // 61
+    'Barcelona Airport, Spain',              // 52
+    'Istanbul Airport, Turkey',              // 52
+    'Moscow Airport, Russia',                // 49
+    'Munich Airport, Germany',               // 47
+    'Rome Airport, Italy',                   // 43
+    'Dublin Airport, Ireland',               // 32
+    'Vienna Airport, Austria',               // 31
+    'Zurich Airport, Switzerland',           // 31
+    'Lisbon Airport, Portugal',              // 31
+    'Copenhagen Airport, Denmark',           // 30
+    'Palma de Mallorca Airport, Spain',      // 29
+    'Milan Airport, Italy',                  // 28
+    'Brussels Airport, Belgium',             // 26
+    'Athens Airport, Greece',                // 25
+    'Berlin Airport, Germany',               // 24      
+    'Warsaw Airport, Poland',                // 18
+    'Prague Airport, Czech Republic',        // 17
+    'Hamburg Airport, Germany',              // 17
+  ];
+
+
+total Flights = 60 per day
+
+Dinamic: 
+
+AiportsCollections: [
+
+    {  name: milan,
+       level 10: alle destinations
+    },
+     {  name: berlin,
+       level 3: alle destinations
+    },
+     {  name: amsterdam,
+       level 7: 70% destinations
+    },
+] 
+
+
+-flight time is between 06:00h and 23:30h
+
+   
+  
+  

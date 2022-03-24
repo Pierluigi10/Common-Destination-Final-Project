@@ -1,0 +1,51 @@
+.Signup {
+  @include initialStyle;
+
+  form {
+    fieldset {
+      @include fieldsetStyle;
+      padding: 1% 4% 2% 1%;
+
+      legend {
+        @include legendStyle;
+      }
+
+      .row {
+        display: flex;
+        align-content: flex-start;
+        padding: 3% 0%;
+
+        input {
+          width: 95%;
+          @include inputStyle;
+        }
+      }
+      .note {
+        font-size: clamp(1em, 1vw, 3em);
+        text-align: center;
+        // color: #cfc6c6;
+      }
+
+      .note.invalid {
+        color: #d3cfcfec;
+      }
+
+      .note.valid {
+        color: #47444485;
+      }
+
+      .invalid input {
+        color: #b91313ed;
+      }
+
+      .buttonRow {
+        display: flex;
+        justify-content: right;
+
+        button {
+          @include buttonStyle;
+        }
+      }
+    }
+  }
+}

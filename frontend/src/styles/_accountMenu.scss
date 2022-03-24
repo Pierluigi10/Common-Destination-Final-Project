@@ -1,0 +1,42 @@
+.AccountMenu {
+  width: max-content;
+  height: max-content;
+  background-color: $color1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(1em, 1.5vw, 2em);
+  position: absolute;
+  top: 5vh;
+  right: 10vw;
+  padding: 2% 3% 2% 3%;
+  // border: 2px solid $color6;
+  animation: animate 0.6s ease-in-out;
+  animation-name: burgeMenuApparition;
+  border-radius: 1rem;
+
+  li {
+    //   width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff4eb;
+    //   margin: 2vh;
+    //   padding: 1% 7%;
+    // background-color:#145375;
+    // color: red;
+    // border-bottom: 1px solid black;
+    border-width: medium;
+    // font-size: clamp(5em, 1.5vw, 2em);
+  }
+}
+
+// @keyframes burgeMenuApparition {
+//   0% {
+//     opacity: 0;
+//     transform: translate(180%, 130%) scale(0.1);
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }

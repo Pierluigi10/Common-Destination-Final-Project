@@ -1,0 +1,9 @@
+{
+  "meetingDuration": "The minimum time passengers want to spend together.",
+  "datesErrors": {
+    "otboundLaterThanReturn": "The start date cannot be later than the return date.",
+    "withoutMeeting": "Some departures are after some returns, passengers can never meet.",
+    "detesAreEmpty": "Some date fields are empty or wrong."
+  },
+  "airportsErrors": "Some airport fields are empty or wrong."
+}

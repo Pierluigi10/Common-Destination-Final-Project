@@ -1,0 +1,35 @@
+.Navbar {
+  // background-color:#fff4ebb9;
+  background-color: #ffffffc2; //? opacity
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  // position: absolute;
+  z-index: 2;
+  top: 0;
+
+  .menuIcon,
+  .menuIconClosed {
+    cursor: grabbing;
+    color: #145375;
+  }
+
+  .menuIcon {
+    width: clamp(1.5em, 2.5vw, 3.2em);
+    // height: clamp(1.8em, 3vh, 3.7em);
+    margin-right: 4vw;
+    z-index: 999999999; // ?
+  }
+  .menuIconClosed {
+    width: clamp(1.8em, 1vw, 3.5em);
+    height: clamp(1.8em, 1vh, 3.5em);
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    animation: animate 0.7s ease-in-out;
+    animation-name: burgeMenuApparition;
+  }
+}

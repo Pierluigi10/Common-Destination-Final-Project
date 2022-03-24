@@ -1,0 +1,70 @@
+.Validation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 2% 1% 2% 1%;
+  animation: animate 1s ease-in-out;
+  animation-name: validationsApparition;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // border-radius: 39px;
+  // background: #2f799f;
+  // background: #145375;
+  // border-radius: 50px;
+  background: #145375;
+  box-shadow: -5px -5px 10px #114763, 5px 5px 10px #175f87;
+  
+
+  ul {
+    li {
+      width: max-content;
+      padding: 1%;
+      display: flex;
+      align-items: center;
+
+      // background-color: $color3;
+      // border: 2px solid black;
+
+      p {
+        font-size: clamp(0.9em, 1vw, 5em);
+        color: #cfc6c6;
+      }
+
+      button {
+        @include buttonStyle;
+        padding: 0.3vw;
+        border-radius: 0.3rem;
+        font-weight: bold;
+        // font-size: clamp(1em, 1vw, 1.2em);
+        margin-left: 0.3vw;
+      }
+    }
+  }
+  .menuIconClosed {
+    position: absolute;
+    top: 5vh;
+    right: 4vw;
+    cursor: pointer;
+    width: clamp(2em, 2vw, 3em);
+    height: clamp(2em, 2.2vh, 3em);
+    z-index: 999999999;
+    color: #cfc6c6;
+  }
+}
+
+@keyframes validationsApparition {
+  0% {
+    opacity: 0;
+    width: 10vw;
+    height: 10vh;
+    box-shadow: 0px 0px 0px;
+  }
+  100% {
+    box-shadow: 0px 11px 31px 6px #000000;
+  }
+}

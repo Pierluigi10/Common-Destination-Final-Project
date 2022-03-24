@@ -1,0 +1,190 @@
+/* reset CSS */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+  /* Hide scrollbars */
+  /* Works on Firefox */
+  /* Works on Chrome, Edge, and Safari */
+}
+
+html body .App {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: #c3c3c3;
+  font-family: "Poppins", sans-serif;
+}
+
+html body .App .Navbar {
+  background-color: #f2fff0;
+  width: 100%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+html body .App .Navbar .topNavBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1%;
+  font-size: clamp(1em, 1.5vw, 2em);
+}
+
+html body .App .Navbar .topNavBar li {
+  margin: 1%;
+  margin: 0 8vw 0 0vw;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+html body .App .Navbar .topNavBar li img {
+  width: clamp(1.4em, 2vw, 3.5em);
+  height: clamp(1.4em, 2vh, 3.5em);
+}
+
+html body .App .Navbar .topNavBar li span {
+  float: right;
+}
+
+html body .App .Navbar .topNavBar li .active {
+  display: none;
+  font-weight: bolder;
+}
+
+html body .App .Navbar .menuIcon,
+html body .App .Navbar .menuIconClosed {
+  margin-right: 4vw;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+html body .App .Navbar .menuIcon {
+  width: clamp(1.5em, 2.5vw, 3.2em);
+  height: clamp(1.8em, 3vh, 3.7em);
+  z-index: 999999999;
+}
+
+html body .App .Navbar .menuIconClosed {
+  width: clamp(1.8em, 1vw, 3.5em);
+  height: clamp(1.8em, 1vh, 3.5em);
+  position: absolute;
+  -webkit-animation: animate 1.2s ease-in-out;
+          animation: animate 1.2s ease-in-out;
+  -webkit-animation-name: burgeMenuApparition;
+          animation-name: burgeMenuApparition;
+}
+
+html body .App .burgerMenu {
+  background-color: #c3c3c3ce;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: clamp(1em, 1.5vw, 2em);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2% 1% 2% 1%;
+  -webkit-animation: animate 1s ease-in-out;
+          animation: animate 1s ease-in-out;
+  -webkit-animation-name: burgeMenuApparition;
+          animation-name: burgeMenuApparition;
+}
+
+html body .App .burgerMenu li {
+  margin: 2vh;
+}
+
+@-webkit-keyframes burgeMenuApparition {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(180%, 130%) scale(0.1);
+            transform: translate(180%, 130%) scale(0.1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes burgeMenuApparition {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(180%, 130%) scale(0.1);
+            transform: translate(180%, 130%) scale(0.1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html body .App .Main {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #46a7da;
+  padding: 5% 3%;
+}
+
+html body .App .Main .airplaneScrollBarDown {
+  width: clamp(1em, 2.5vw, 3em);
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+html body .App ul {
+  list-style: none;
+}
+
+html body .App ul li,
+html body .App ul a {
+  color: #217099;
+  font-weight: bolder;
+}
+
+html * {
+  scrollbar-width: thin;
+}
+
+html *::-webkit-scrollbar {
+  width: 0px;
+}
+
+html *::-webkit-scrollbar-track {
+  width: 0vw;
+}
+/*# sourceMappingURL=App.css.map */

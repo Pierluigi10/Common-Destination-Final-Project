@@ -1,0 +1,32 @@
+[
+    {
+      "username": "anonymousUser",
+      "firstName": "Anonymous",
+      "lastName": "User",
+      "accessGroups": "loggedOutUsers"
+    },
+    {
+      "username": "jj",
+      "firstName": "James",
+      "lastName": "JustSignedUpton",
+      "accessGroups": "loggedInUsers,members"
+    },
+    {
+      "username": "aa",
+      "firstName": "Ashley",
+      "lastName": "Approvedmemberton",
+      "accessGroups": "loggedInUsers, members"
+    },
+    {
+      "username": "kc",
+      "firstName": "Kyle",
+      "lastName": "ContentEditorton",
+      "accessGroups": "loggedInUsers, members"
+    },
+    {
+      "username": "ma",
+      "firstName": "Mindy",
+      "lastName": "Administraton",
+      "accessGroups": "loggedInUsers,members, admins"
+    }
+  ]

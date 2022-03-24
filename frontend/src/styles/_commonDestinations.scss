@@ -1,0 +1,145 @@
+.commonDestinations {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+  font-size: 1.25rem;
+
+  .destinations {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    li {
+      margin-top: 1vh;
+    }
+
+    .destination {
+      color: #145375;
+      font-weight: bolder;
+      // border: 2px solid $color2;
+      width: fit-content;
+      height: fit-content;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    .commonDestinationToAirport {
+      width: 100%;
+      color: $color2;
+      background-color: #fff4eb;
+      font-family: Arial;
+      font-weight: bold;
+      padding: 0.5rem;
+      cursor: pointer;
+      border: 2px solid $color2;
+
+      &:nth-child(odd) {
+        background: $color2;
+        color: #fff4eb;
+      }
+
+      &:hover {
+        position: relative;
+        bottom: 3px;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.passengerFlights {
+  max-width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 11%;
+
+  @media (min-width: 768px) {
+    margin-top: 3.5%;
+  }
+
+  .passengerFlight {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: #fff4eb;
+    margin-bottom: 3%;
+    padding: 1rem;
+    // border: 6px dashed #145375;
+    box-shadow: 0 0 10px 5px #145375;
+    // text-align: center;
+    line-height: 1.5rem;
+
+    &:hover {
+      position: relative;
+      bottom: 3px;
+    }
+
+    .passengerIcon {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .passengerOutbound {
+      margin-bottom: 1rem;
+
+      .datesColor {
+        color: #000;
+
+        .reactIconClock {
+          color: #145375;
+          font-size: 1.25rem;
+        }
+      }
+
+      .airportsToUppercase {
+        text-transform: uppercase;
+        color: #000;
+
+        .reactIconAirplane {
+          color: #145375; // ???
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .stayTimeTotalPrice {
+      color: #000;
+
+      // .reactIconEuro {
+      //   color: #145375;
+      // }
+    }
+  }
+
+  button {
+    width: fit-content;
+    background-color: $color2;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    margin-top: 2%;
+
+    &:hover {
+      background-color: #5c83b3;
+    }
+
+    &:active {
+      position: relative;
+      top: 2px;
+    }
+  }
+}

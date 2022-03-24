@@ -1,0 +1,39 @@
+.Login {
+  @include initialStyle;
+
+  form {
+    fieldset {
+      @include fieldsetStyle;
+      padding: 1% 4% 2% 1%;
+
+      legend {
+        @include legendStyle;
+      }
+
+      .row {
+        display: flex;
+        padding: 3% 0%;
+
+        input {
+          width: 90%;
+          @include inputStyle;
+        }
+      }
+
+      .note {
+        font-size: clamp(0.9em, 1vw, 5em);
+        text-align: center;
+        color: #cfc6c6;
+      }
+
+      .buttonRow {
+        display: flex;
+        justify-content: right;
+
+        button {
+          @include buttonStyle;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "form-validation-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "npx nodemon src/server.js",
+    "seed": "node src/seed.js",
+    "backend": "npm start",
+    "frontend": "cd ../frontend && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "geolib": "^3.3.3",
+    "moment": "^2.29.1",
+    "moment-random": "^1.1.0",
+    "mongoose": "^6.0.13",
+    "node-open-geocoder": "^4.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  }
+}

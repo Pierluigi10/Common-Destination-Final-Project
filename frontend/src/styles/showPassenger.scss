@@ -1,0 +1,94 @@
+.showPassenger {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  height: 100%;
+  border-bottom: 2px solid #145375;
+  margin: 0 2%;
+  padding: 2% 0;
+
+  &:nth-last-child(2) {
+    border-bottom: none;
+  }
+
+  .outerContainer {
+    width: fit-content;
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+
+    .selectDeparture {
+      display: flex;
+      margin-bottom: 0.2rem;
+
+      @media (min-width: 768px) {
+        margin-right: 1rem;
+        margin-bottom: 0;
+      }
+    }
+
+    input {
+      @include inputStyle;
+      width: fit-content;
+    }
+
+    .airport {
+      @include inputStyle;
+      width: fit-content;
+    }
+
+    .airportError {
+      @include inputStyle;
+      width: fit-content;
+      box-shadow: inset 0 0 0 2rem #f00;
+
+      &::placeholder {
+        color: #fff4eb;
+      }
+    }
+
+    .selectDates {
+      display: flex;
+
+      @media (min-width: 768px) {
+        margin-right: 1rem;
+      }
+    }
+
+    .datePicker {
+      width: 99%;
+    }
+
+    .dateError {
+      border: 2px solid red;
+      box-shadow: inset 0 0 0 2rem #f00;
+
+      &::placeholder {
+        color: #fff4eb;
+      }
+    }
+  }
+
+  .deletePassenger {
+    position: absolute;
+    right: 5%;
+    font-size: 1.5rem;
+    color: #145375;
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      margin: auto;
+      top: 33.33%;
+      right: -1%;
+      cursor: pointer;
+    }
+  }
+}
+
+// datePicker library => turns off position: relative;
+.react-datepicker__input-container {
+  position: static;
+}

@@ -1,0 +1,122 @@
+@url= http://localhost:8033
+
+### READ users 
+GET {{url}}/users
+content-type: application/json
+
+
+### Read user data
+GET {{url}}/users/61dd8a6d1e1e8fd4dbfac2df
+content-type: application/json
+
+
+### CREATE user with same password
+POST {{url}}/users/create
+content-type: application/json
+ 
+{
+    "username": "test",
+    "password1": "12345678",
+    "password2": "12345678",
+    "email": "test@mail.com"
+}
+
+
+### CREATE/SIGNUP user with same password
+POST {{url}}/users/signup
+content-type: application/json
+ 
+{
+    "username": "test1",
+    "password1": "12345678",
+    "password2": "12345678",
+    "email": "test1@mail.com"
+}
+
+
+### CREATE/SIGNUP user with same password
+POST {{url}}/users/signup
+content-type: application/json
+ 
+{
+    "username": "LastTest2",
+    "password1": "12345678",
+    "password2": "12345678",
+    "email": "lasttest2@gmail.com"
+}
+
+### CREATE/SIGNUP user with different password (error)
+POST {{url}}/users/signup
+content-type: application/json
+ 
+{
+    "username": "TEST93",
+    "password1": "1234564",
+    "password2": "12345678",
+    "email": "test9@mail.com"
+}
+
+
+
+### user login (admin)
+POST {{url}}/users/login
+content-type: application/json
+
+{
+    "username": "NewDB",
+    "password": "12345678"
+}
+
+
+### user login 
+POST {{url}}/users/login
+content-type: application/json
+
+{
+   "username": "test2",
+   "password": "pier"
+}
+
+
+
+### LOGIN user false (error)
+POST {{url}}/users/login
+content-type: application/json
+ 
+{
+    "userName": "g00g",
+    "password": "12345678"
+}
+
+
+### READ currentUser
+GET {{url}}/users/currentuser
+content-type: application/json
+
+
+### user logout
+GET {{url}}/users/logout
+content-type: application/json
+
+
+### UPDATE user
+PATCH {{url}}/users/update/test7
+content-type: application/json
+
+{  
+    "username": "test7",
+    "password":"pier",
+    "passwordNew": "pier"  
+}
+
+
+### DELETE user by user
+DELETE {{url}}/users/deleteuser/61e82bdb61c83cecfdefdc85
+content-type: application/json
+
+
+### DELETE user by admins
+DELETE {{url}}/users/deleteuser/61e82bdb61c83cecfdefdc85
+content-type: application/json
+
+

@@ -1,0 +1,20 @@
+.Main {
+  // border: solid 3px red;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $color3;
+  // padding: 1% 0;
+  // margin-top: auto;
+
+  .airplaneScrollBar {
+    width: clamp(1em, 2.5vw, 3em);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .backgroundBlurOpac {
+    opacity: 0.5;
+    filter: blur(1.2px);
+  }
+}

@@ -1,4 +1,4 @@
-<img src="./images/logoCommon.png" height="100px" align="right"/>
+<img src="./src/assets/images/logoCommon.png" height="100px" align="right"/>
 
 # Common Destination
 
@@ -20,13 +20,13 @@ Common Destination is a final project of the web developer course at the Digital
 
 > Mobile Version
 
-![Screenshot Page Mobile](./images/mobile-min.png)
+![Screenshot Page Mobile](./src/assets/images/mobile-min.png)
 
 <br />
 
 > Desktop Version
 
-![Screenshot Page Desktop](./images/desktop-min.png)
+![Screenshot Page Desktop](./src/assets/images/desktop-min.png)
 
 <br />
 <br />
